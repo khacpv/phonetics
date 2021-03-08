@@ -302,7 +302,8 @@ export default function Home() {
           <div className="level-1">4.5. Rythm</div>
           <div className="level-2">
             - Rythm là việc khi nói sẽ nhấn vào những từ cần nhấn. Những từ
-            không cần nhấn thì nhẹ, ngắn hơn. - Khi bị hỏi thì có thể trả lời
+            không cần nhấn thì nhẹ, ngắn hơn. 
+            <br/>- Khi bị hỏi thì có thể trả lời
             theo 2 cách: chỉ nói keyword (nói trống không), hoặc trả lời đầy đủ
             (chia theo though group)
             <br />- <strong>Through group</strong> là một cụm từ có ý nghĩa và
