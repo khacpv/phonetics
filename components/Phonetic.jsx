@@ -1,8 +1,14 @@
 import React, { useCallback, useRef, useEffect } from 'react';
 
+const stopAllSound = () => {
+  const sounds = document.getElementsByTagName('audio');
+  for (var i = 0; i < sounds.length; i++) sounds[i].pause();
+};
+
 const Phonetic = ({ ipa, sound, children, ...rest }) => {
   const audioRef = useRef(null);
   const playSound = useCallback(() => {
+    stopAllSound();
     audioRef.current.play();
   }, [sound]);
   return (
