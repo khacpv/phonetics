@@ -9,6 +9,7 @@ const Phonetic = ({ ipa, sound, children, ...rest }) => {
   const audioRef = useRef(null);
   const playSound = useCallback(() => {
     stopAllSound();
+    audioRef.current.currentTime = 0;
     audioRef.current.play();
   }, [sound]);
   return (
